@@ -1,0 +1,48 @@
+{
+    "best_model": "XGBoost",
+    "features": {
+        "numerical": [
+            "Area",
+            "Bedrooms",
+            "Bathrooms",
+            "Age"
+        ],
+        "categorical": [
+            "Location"
+        ]
+    },
+    "locations": [
+        "Downtown",
+        "Rural",
+        "Suburbs",
+        "Uptown",
+        "Waterfront"
+    ],
+    "results": {
+        "Linear Regression": {
+            "RMSE": 51509.51,
+            "MAE": 37762.37,
+            "R2": 0.9489
+        },
+        "Ridge Regression": {
+            "RMSE": 51529.11,
+            "MAE": 37787.9,
+            "R2": 0.9489
+        },
+        "Lasso Regression": {
+            "RMSE": 51521.88,
+            "MAE": 37778.92,
+            "R2": 0.9489
+        },
+        "Random Forest": {
+            "RMSE": 43290.49,
+            "MAE": 31310.02,
+            "R2": 0.9639
+        },
+        "XGBoost": {
+            "RMSE": 39775.24,
+            "MAE": 28858.58,
+            "R2": 0.9695
+        }
+    }
+}
